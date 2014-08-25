@@ -91,23 +91,23 @@
 
 	# Show that we are where we think we are in the filesystem
 	@foonty working $pwd
-	/Users/haneda/Desktop/working
+	/Users/you/Desktop/working
 
 	# Make a bunch of files that we will test for (tar)'ing up
 	@foonty working $touch file1 file2 file3 file4 file5 1 2 3 4 5
 
 	# List the files we just made to make sure we made what we wanted
 	@foonty working $l
-	-rw-r--r--   1 haneda  staff    0 Aug 11 04:22 1
-	-rw-r--r--   1 haneda  staff    0 Aug 11 04:22 2
-	-rw-r--r--   1 haneda  staff    0 Aug 11 04:22 3
-	-rw-r--r--   1 haneda  staff    0 Aug 11 04:22 4
-	-rw-r--r--   1 haneda  staff    0 Aug 11 04:22 5
-	-rw-r--r--   1 haneda  staff    0 Aug 11 04:22 file1
-	-rw-r--r--   1 haneda  staff    0 Aug 11 04:22 file2
-	-rw-r--r--   1 haneda  staff    0 Aug 11 04:22 file3
-	-rw-r--r--   1 haneda  staff    0 Aug 11 04:22 file4
-	-rw-r--r--   1 haneda  staff    0 Aug 11 04:22 file5
+	-rw-r--r--   1 you  staff    0 Aug 11 04:22 1
+	-rw-r--r--   1 you  staff    0 Aug 11 04:22 2
+	-rw-r--r--   1 you  staff    0 Aug 11 04:22 3
+	-rw-r--r--   1 you  staff    0 Aug 11 04:22 4
+	-rw-r--r--   1 you  staff    0 Aug 11 04:22 5
+	-rw-r--r--   1 you  staff    0 Aug 11 04:22 file1
+	-rw-r--r--   1 you  staff    0 Aug 11 04:22 file2
+	-rw-r--r--   1 you  staff    0 Aug 11 04:22 file3
+	-rw-r--r--   1 you  staff    0 Aug 11 04:22 file4
+	-rw-r--r--   1 you  staff    0 Aug 11 04:22 file5
 
 	# tar the files up into collection.tar
 	# note that the order of arguments is [TapeArchive].tar [[List of files]]
@@ -126,14 +126,14 @@
 
 	# List the files to see that they have been tar'd up into collection.tar
 	@foonty working $l | grep -i collection
-	-rw-r--r--   1 haneda  staff  6144 Aug 11 04:23 collection.tar
+	-rw-r--r--   1 you  staff  6144 Aug 11 04:23 collection.tar
 
 	# Clean-up after myself, leaving just the tar archive
 	@foonty working $rm 1 2 3 4 5 file*
 
 	# Just collection.tar remains now
 	@foonty working $l
-	-rw-r--r--  1 haneda  staff  6144 Aug 11 04:23 collection.tar
+	-rw-r--r--  1 you  staff  6144 Aug 11 04:23 collection.tar
 
 	# Delete the "working" dir from ~/Desktop/working
 	@foonty Desktop $rmdir ~/Desktop/working
