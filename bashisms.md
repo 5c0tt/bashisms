@@ -76,23 +76,23 @@
 	rm -v `cat /tmp/filelist | sort | awk 'BEGIN {c=0} {if ($1 == c) print $3; c=$1}'`
 	rm /tmp/filelist
 	ls -la | wc -l
-	
+
 ### Bash repeat loop one-liner ###
 	while true; do ls -lah | grep -i home; echo \n;    sleep 0.5; done
-	
+
 ### Create `tar` archive ###
-	
+
 	# 08/11/14  - 05:04:51 AM
 	# `l` is an alias for `ls -la`
-	
+
 	# Make a dir to test in on the ~/Desktop called "~/Desktop/working"
 	# change (cd) into that dir
 	@foonty Desktop $mkdir -p working; cd working
-	
+
 	# Show that we are where we think we are in the filesystem
 	@foonty working $pwd
 	/Users/haneda/Desktop/working
-	
+
 	# Make a bunch of files that we will test for (tar)'ing up
 	@foonty working $touch file1 file2 file3 file4 file5 1 2 3 4 5
 
@@ -127,43 +127,43 @@
 	# List the files to see that they have been tar'd up into collection.tar
 	@foonty working $l | grep -i collection
 	-rw-r--r--   1 haneda  staff  6144 Aug 11 04:23 collection.tar
-	
+
 	# Clean-up after myself, leaving just the tar archive
 	@foonty working $rm 1 2 3 4 5 file*
-	
+
 	# Just collection.tar remains now
 	@foonty working $l
 	-rw-r--r--  1 haneda  staff  6144 Aug 11 04:23 collection.tar
 
 	# Delete the "working" dir from ~/Desktop/working
 	@foonty Desktop $rmdir ~/Desktop/working
-	
-	# At this point, the "working" directory was gone.  I had previously `tar xvf collection.tar`
-	# on the files to make sure that the files could be restored without trouble.  I'm still not sure 
-	# about meta data, but the space and aggravation that Caroline and Jake are causing my 
-	# computer—there isn't much more I am willing to put into this project.
-	
 
-### Disable/Enable Spotlight from the Command Line ### 
+	# At this point, the "working" directory was gone.  I had previously `tar xvf collection.tar`
+	# on the files to make sure that the files could be restored without trouble.  I'm still not sure
+	# about meta data, but the space and aggravation that Caroline and Jake are causing my
+	# computer—there isn't much more I am willing to put into this project.
+
+
+### Disable/Enable Spotlight from the Command Line ###
 Taken from [http://www.tekrevue.com/](http://www.tekrevue.com/tip/three-ways-to-prevent-spotlight-from-indexing-items-on-your-mac/)
 
 	sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
-	
+
 	sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
 
 	Also, add your boot drive to the System Preferences exclusions temporarily.
-	
+
 #### One line repeat loop with multiple commands ####
 	while true; do ls -lah | grep -i home; echo \n;    sleep 30; done
-	
-#### Another example of a long form repeat loop ####
-#!/bin/sh
 
+#### Another example of a long form repeat loop ####
+
+	#!/bin/sh
 	cd ~/Documents/place/I/want/to//watch
 
 	while true;
 	    do
-			# Whatever other commands you desire, 
+			# Whatever other commands you desire,
 			# Usually one per line for readability
 			ls -l | grep caroline\.dmg;
 			ls -lh | grep caroline\.dmg;
