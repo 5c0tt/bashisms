@@ -1,7 +1,14 @@
-###Bashisms that I can't always remember###
+###Bashisms### 
 
-I use an app called LightPaper, which allows me to type in MarkDown, and see a live preview pane of what the resulting MarkDown will look like.
+##bash and shell commands I can't always remember, but use often##
+
+I use an app called [LightPaper](http://clockworkengine.com/lightpaper-mac/) which allows me to type in [MarkDown](http://daringfireball.net/projects/markdown/), and see a live preview pane of what the resulting MarkDown will look like.
+
+The nice thing is, the file remains a plain text file, LightPaper adds nothing special to it other than telling the OS to open all .md files in LightPaper.
 
 I will publish this file to github every time I add something new.
 
+##How you can help##
 I would love others to help clean up and add to it.  The notion is to keep these as one linters, or snippets of no more than around 8 lines.  Don't sweat it if you are 10 lines, I would rather see 10 lines than some crafty hard to understand one liner just to meet an arbitrary 8 line requirement.
+
+If you are interested in helping, just follow me, or join, or do whatever it is that you do in github to become a contributor.  I am a first time user, so this is all knew to me.  For example, someone could pull this README.md file down and change this part here I say "I don't know what I am doing" and add in instructions on how others can help.
