@@ -1,4 +1,5 @@
-# Bash Tips and Tricks #
+# Bash Tips and Tricks # 
+Last Modified 08/30/14 — 12:16:29 AM
 
 
 ### Use expanded Print dialog by default ( Single User ) ###
