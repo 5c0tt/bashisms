@@ -1,5 +1,6 @@
+Scott Haneda | [@cometbus](https://twitter.com/cometbus)
+
 # Bashisms #
-@cometbus 
 
 ## bash and shell commands I can't always remember, but use often ##
 
@@ -7,7 +8,7 @@ I use an app called [LightPaper](http://clockworkengine.com/lightpaper-mac/) whi
 
 The nice thing is, the file remains a plain text file, LightPaper adds nothing special to it other than telling the OS to open all .md files in LightPaper.
 
-I will [publish this file](https:///README.md) to github every time I add something new.
+I will [publish this file](https://github.com/5c0tt/bashisms) to github every time I add something new.
 
 ## How you can help ##
 I would love others to help clean up and add to it.  The notion is to keep these as one linters, or snippets of no more than around 8 lines.  Don't sweat it if you are 10 lines, I would rather see 10 lines than some crafty hard to understand one liner just to meet an arbitrary 8 line requirement.
