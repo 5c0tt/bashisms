@@ -1,5 +1,6 @@
 # Bash Tips and Tricks #
 
+
 ### Use expanded Print dialog by default ( Single User ) ###
 
 	defaults write -g PMPrintingExpandedStateForPrint -bool TRUE
@@ -174,6 +175,19 @@ Taken from [http://www.tekrevue.com/](http://www.tekrevue.com/tip/three-ways-to-
 * [PDF—LightPaper title problems example](http://dl.dropbox.com/u/340087/drops/08.11.14/bash-tips-+tricks-07-084726.pdf)
 * [HTML—LightPaper title problems example](http://dl.dropbox.com/u/340087/drops/08.11.14/bash-tips-+tricks-c9-084941.html)
 
+## File System Commands ##
+The below commands will in general show you what is going on in real-time with your disk access.
+
+Some of the below are not default included in Mac OS X and may need to be installed:
+
+* `fs_usage`
+* `lsof`
+* `iostat`
+* `iotop`
+* `sar`
+* `dstat`
+* `vmstat`
+* `iozone`
 
 
 
