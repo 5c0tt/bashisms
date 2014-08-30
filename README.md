@@ -1,4 +1,4 @@
-Scott Haneda | [@cometbus](https://twitter.com/cometbus)
+Last Modified 08/30/14 — 12:42:09 AM • Scott Haneda • [@cometbus](https://twitter.com/cometbus)
 
 # Bashisms
 

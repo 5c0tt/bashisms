@@ -1,7 +1,6 @@
+Last Modified 08/30/14 — 12:42:09 AM • Scott Haneda • [@cometbus](https://twitter.com/cometbus)
+
 # Bash Tips and Tricks
-
-Last Modified 08/30/14 — 12:16:29 AM
-
 
 ### Use expanded Print dialog by default ( Single User )
 
