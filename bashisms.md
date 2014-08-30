@@ -1,27 +1,27 @@
-# Bash Tips and Tricks # 
+# Bash Tips and Tricks
 
 Last Modified 08/30/14 — 12:16:29 AM
 
 
-### Use expanded Print dialog by default ( Single User ) ###
+### Use expanded Print dialog by default ( Single User )
 
 	defaults write -g PMPrintingExpandedStateForPrint -bool TRUE
 
-### To set this preference for all users ( Multi-User ) ###
+### To set this preference for all users ( Multi-User )
 
 	defaults write /Library/Preferences/.GlobalPreferences PMPrintingExpandedStateForPrint -bool TRUE
 
 
-### Use expanded Save/Open dialog by default ###
+### Use expanded Save/Open dialog by default
 
 	defaults write -g NSNavPanelExpandedStateForSaveMode -bool TRUE
 
-### Mouse Scaling ###
+### Mouse Scaling
 
 	defaults write -g com.apple.trackpad.scaling 4.7
 	defaults read -g com.apple.trackpad.scaling
 
-### Key Repeat Rate ###
+### Key Repeat Rate
 
 	defaults write NSGlobalDomain KeyRepeat -int 1
 
@@ -30,47 +30,47 @@ Last Modified 08/30/14 — 12:16:29 AM
 3. You may also want to try a value of 1 if 0 seems too fast.
 4. You can always visit the Keyboard & Mouse System Preferences panel to undo your changes.
 
-### Disable Dashboard Widgets ( 10.8 OK ) ###
+### Disable Dashboard Widgets ( 10.8 OK )
 
 	defaults write com.apple.dashboard mcx-disabled -boolean YES
 	killall Dock
 
-### Remove the TopSites feature from Safari ###
+### Remove the TopSites feature from Safari
 
 	defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
 
-### Show all hidden files ###
+### Show all hidden files
 
 	defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder
 
-### Clean `ls` listing in bash shell ###
+### Clean `ls` listing in bash shell
 
 	ls -t
 	* - searches for any pattern
 	? - searches for one, and only one, character
 	[] - searches for a single character, but allows a choice of characters
 
-### Delete all .DS_Store files ###
+### Delete all .DS_Store files
 
 	find . -name .DS_Store -exec rm -f {} \;
 
-### Update Locate Database ###
+### Update Locate Database
 
 	sudo /usr/libexec/locate.updatedb
 
-### One-Line Bash Repeat Loop ###
+### One-Line Bash Repeat Loop
 
 	while true; do ls -lh ~/path_to_direcotry_of_files; sleep .2; done;
 	- or -
 	while true; do echo 'test'; sleep .2; done;
 
-### General hints ###
+### General hints
 * [Speed up your Mac with the Terminal](http://www.chriswrites.com/2012/02/5-ways-to-speed-up-your-mac-just-using-terminall/)
 * [Customizations for Mountain Lion](http://www.philmug.ph/forum/f19/customizations-mountain-lion-%5Bterminal-commands%5D-85165/)
 * [Best list of defaults write commands I have ever seen](http://mths.be/osx)
 * [Setup your computer from scratch with a script](https://github.com/mathiasbynens/dotfiles/blob/master/.osx)
 
-### Removes duplicate files from a direcory based on it's checksum ###
+### Removes duplicate files from a direcory based on it's checksum
 	cd /Volumes/vorbis/images
 	pwd
 	ls -la | wc -l
@@ -80,10 +80,10 @@ Last Modified 08/30/14 — 12:16:29 AM
 	rm /tmp/filelist
 	ls -la | wc -l
 
-### Bash repeat loop one-liner ###
+### Bash repeat loop one-liner
 	while true; do ls -lah | grep -i home; echo \n;    sleep 0.5; done
 
-### Create `tar` archive ###
+### Create `tar` archive
 
 	# 08/11/14  - 05:04:51 AM
 	# `l` is an alias for `ls -la`
@@ -147,7 +147,7 @@ Last Modified 08/30/14 — 12:16:29 AM
 	# computer—there isn't much more I am willing to put into this project.
 
 
-### Disable/Enable Spotlight from the Command Line ###
+### Disable/Enable Spotlight from the Command Line
 Taken from [http://www.tekrevue.com/](http://www.tekrevue.com/tip/three-ways-to-prevent-spotlight-from-indexing-items-on-your-mac/)
 
 	sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
@@ -156,10 +156,10 @@ Taken from [http://www.tekrevue.com/](http://www.tekrevue.com/tip/three-ways-to-
 
 	Also, add your boot drive to the System Preferences exclusions temporarily.
 
-#### One line repeat loop with multiple commands ####
+#### One line repeat loop with multiple commands#
 	while true; do ls -lah | grep -i home; echo \n;    sleep 30; done
 
-#### Another example of a long form repeat loop ####
+#### Another example of a long form repeat loop#
 
 	#!/bin/sh
 	cd ~/Documents/place/I/want/to//watch
@@ -177,7 +177,7 @@ Taken from [http://www.tekrevue.com/](http://www.tekrevue.com/tip/three-ways-to-
 * [PDF—LightPaper title problems example](http://dl.dropbox.com/u/340087/drops/08.11.14/bash-tips-+tricks-07-084726.pdf)
 * [HTML—LightPaper title problems example](http://dl.dropbox.com/u/340087/drops/08.11.14/bash-tips-+tricks-c9-084941.html)
 
-## File System Commands ##
+## File System Commands
 The below commands will in general show you what is going on in real-time with your disk access.
 
 Some of the below are not default included in Mac OS X and may need to be installed:
