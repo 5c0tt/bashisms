@@ -84,18 +84,17 @@ Last Modified 08/30/14 — 12:42:09 AM • Scott Haneda • [@cometbus](https://
 
 ### Create `tar` archive
 
-	# 08/11/14  - 05:04:51 AM
 	# `l` is an alias for `ls -la`
 
 	# Make a dir to test in on the ~/Desktop called "~/Desktop/working"
-	# change (cd) into that dir
+	# change `cd` into that dir
 	@foonty Desktop $mkdir -p working; cd working
 
 	# Show that we are where we think we are in the filesystem
 	@foonty working $pwd
 	/Users/you/Desktop/working
 
-	# Make a bunch of files that we will test for (tar)'ing up
+	# Make a bunch of files that we will test for "tar'ing" up
 	@foonty working $touch file1 file2 file3 file4 file5 1 2 3 4 5
 
 	# List the files we just made to make sure we made what we wanted
@@ -124,7 +123,26 @@ Last Modified 08/30/14 — 12:42:09 AM • Scott Haneda • [@cometbus](https://
 	a file2
 	a file3
 	a file4
-	a file5
+	a "file5"
+	
+	       ================= Alternate Syntax =================
+          ( Do it all in one shot, a tar and a gzip in one go )
+                
+    Alternate syntax — ( uses file extension .tar.gz )
+    @foonty tar cvzf MyImages-14-09-12.tar.gz /home/MyImages
+     - OR - ( uses file extension .tgz )
+    @foonty tar cvzf MyImages-14-09-12.tgz /home/MyImages
+
+    /home/MyImages/
+    /home/MyImages/Sara-Khan-and-model-Priyanka-Shah.jpg
+    /home/MyImages/RobertKristenviolent101201.jpg
+    /home/MyImages/Justintimerlakenaked101125.jpg
+    /home/MyImages/Mileynudephoto101203.jpg
+    /home/MyImages/JenniferRobert101130.jpg
+    /home/MyImages/katrinabarbiedoll231110.jpg
+    /home/MyImages/the-japanese-wife-press-conference.jpg
+    /home/MyImages/ReesewitherspoonCIA101202.jpg
+    /home/MyImages/yanaguptabaresf231110.jpg
 
 	# List the files to see that they have been tar'd up into collection.tar
 	@foonty working $l | grep -i collection
