@@ -127,6 +127,7 @@ Last Modified 08/30/14 — 12:42:09 AM • Scott Haneda • [@cometbus](https://
 	
 	       ================= Alternate Syntax =================
           ( Do it all in one shot, a tar and a gzip in one go )
+          Came from [tecmint.com](http://www.tecmint.com/18-tar-command-examples-in-linux/)
                 
     Alternate syntax — ( uses file extension .tar.gz )
     @foonty tar cvzf MyImages-14-09-12.tar.gz /home/MyImages
