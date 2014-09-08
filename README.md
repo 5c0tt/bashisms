@@ -14,6 +14,6 @@ I will [publish this file]("https://github.com/5c0tt/bashisms/blob/master/bashis
 ## How you can help
 I would love others to help clean up and add to it.  The notion is to keep these as one linters, or snippets of no more than around 8 lines.  Don't sweat it if you are 10 lines, I would rather see 10 lines than some crafty hard to understand one liner just to meet an arbitrary 8 line requirement.
 
-If you are interested in helping, just follow me, or join, or do whatever it is that you do in github to become a contributor.  I am a first time user, so this is all knew to me.  For example, someone could pull this README.md file down and change this part here I say "I don't know what I am doing" and add in instructions on how others can help.
+If you are interested in helping, just follow me, or join, or do whatever it is that you do in github to become a contributor.  I am a first time user, so this is all knew to me.  For example, someone could pull this [README.md](README.md) file down and change this part here I say "I don't know what I am doing" and add in instructions on how others can help.
 
-It may be a good idea to separate out this file into parts, as there are some very Mac OS X specific commands in the bashisms.md file.
+It may be a good idea to separate out this file into parts, as there are some very Mac OS X specific commands in the [bashisms.md](bashisms.md) file.
