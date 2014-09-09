@@ -1,4 +1,4 @@
-Last Modified 08/30/14 — 12:42:09 AM • Scott Haneda • [@cometbus](https://twitter.com/cometbus)
+Last Modified 09/08/14 — 08:06:59 PM • Scott Haneda • [@cometbus](https://twitter.com/cometbus)
 
 # Bash Tips and Tricks
 
