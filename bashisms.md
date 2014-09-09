@@ -53,6 +53,10 @@ Last Modified 08/30/14 — 12:42:09 AM • Scott Haneda • [@cometbus](https://
 
 	find . -name .DS_Store -exec rm -f {} \;
 
+
+find . -name .DS_Store -exec rm -f {} \;
+
+
 ### Update Locate Database
 
 	sudo /usr/libexec/locate.updatedb
@@ -208,7 +212,45 @@ Some of the below are not default included in Mac OS X and may need to be instal
 * `dstat`
 * `vmstat`
 * `iozone`
+* `spindump`
 
 You can find out more about these types of commands at [this StackOverflow question](http://stackoverflow.com/questions/25477875/what-is-the-name-of-the-command-that-shows-disk-access-in-real-time).
+
+## `spindump` Debugging Crashed Applications
+[`spindump`](https://developer.apple.com/library/mac/documentation/Darwin/Reference/Manpages/man8/spindump.8.html) is an application that when another application is stuck and nee qui `apindump` will eventually be called.  It usually is called automatically, according to the man page, a sample of the offending/stuck app are stored at:
+
+    /Library/Logs/DiagnosticReports/
+    
+I don't know how unusual it is, but I have/had 49 total items in 
+
+    `/Library/Logs/DiagnosticReports/`
+    
+which to me seems like a lot. That is a lot of application crashes, however, I was messing with that "*file corruption*" or the drive in haircutting boi's! computer.
+
+When an application hangs, `spindump` is called.  This is supposed to release the crashed app, though in my experience, it never does.  It does however, write out a sample of the process in the above `DiagnosticReports` location.
+
+### Manually calling `spindump`
+You can also, ( *as root* ) call `spindump` when you know things are going wrong.  The Terminal will report:
+
+    $spindump
+    Sampling all processes for 10 seconds with 10 milliseconds of run time between samples
+    Sampling completed, processing symbols...
+    Spindump analysis written to file /tmp/spindump.txt
+    
+Each time you call the `spindump` command, the filename is incremented in the `/tmp` directory.  [Here is a sample](resources/spindump/spindump.txt) of the file that you can look at to see how to formatting is and what information is provided.
+
+## Mac OS X Dictation
+You can now talk to your Mac, there are two ways this can happen:
+
+1. Talk — data gets sent to Apple, decoded, and sent back
+2. Talk — a large, 750MB local file is used to do the dictation, keeping Apple away from your private conversations.
+
+The file that Apple Downloads is controlled in the System Preferences of the Dictation setting. It is large, and can be found at: 
+
+    /System/Library/Speech/Recognizers/SpeechRecognitionCoreLanguages
+    
+Feel free to safely delete the file if you turn off dictation, which is very CPU heavy on older machines.
+
+
 
 
