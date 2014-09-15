@@ -216,6 +216,19 @@ Some of the below are not default included in Mac OS X and may need to be instal
 
 You can find out more about these types of commands at [this StackOverflow question](http://stackoverflow.com/questions/25477875/what-is-the-name-of-the-command-that-shows-disk-access-in-real-time).
 
+##Change the default save location from iCloud to On My Mac 
+The default save location for [TextEdit](file:///Applications/TextEdit.app) ( *and other apps that can store documents on iCloud* ) is iCloud. It takes a few clicks if you want to expand the save dialog and save a file locally. There is no way to change this in the GUI, but if you run the following command in Terminal, this will set the default save location to **On My Mac** for all iCloud-compatible apps:
+
+    defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+ 
+To change this back to the default, run this command:
+
+    defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool true
+    
+Because DashBoard runs as a background app through the Dock, you will need to restart the Dock to see the changes to effect.  Either restart your computer, or run this common in your Terminal:
+
+    killall -1 Dock
+
 ## `spindump` Debugging Crashed Applications
 [`spindump`](https://developer.apple.com/library/mac/documentation/Darwin/Reference/Manpages/man8/spindump.8.html) is an application that when another application is stuck and nee qui `apindump` will eventually be called.  It usually is called automatically, according to the man page, a sample of the offending/stuck app are stored at:
 
