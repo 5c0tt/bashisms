@@ -225,7 +225,7 @@ To change this back to the default, run this command:
 
     defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool true
     
-Because DashBoard runs as a background app through the Dock, you will need to restart the Dock to see the changes to effect.  Either restart your computer, or run this common in your Terminal:
+Because *DashBoard* runs as a background app through the *Dock*, you will need to restart the *Dock* to see the changes to effect.  Either restart your computer, or run this common in your Terminal:
 
     killall -1 Dock
 
