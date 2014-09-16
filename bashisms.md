@@ -217,7 +217,7 @@ Some of the below are not default included in Mac OS X and may need to be instal
 You can find out more about these types of commands at [this StackOverflow question](http://stackoverflow.com/questions/25477875/what-is-the-name-of-the-command-that-shows-disk-access-in-real-time).
 
 ##Change the default save location from iCloud to On My Mac 
-The default save location for [TextEdit](file:///Applications/TextEdit.app) ( *and other apps that can store documents on iCloud* ) is iCloud. It takes a few clicks if you want to expand the save dialog and save a file locally. There is no way to change this in the GUI, but if you run the following command in Terminal, this will set the default save location to **On My Mac** for all iCloud-compatible apps:
+The default save location for [*TextEdit*](file:///Applications/TextEdit.app) ( *and other apps that can store documents on iCloud* ) is *iCloud*. It takes a few clicks if you want to expand the save dialog and save a file locally. There is no way to change this in the GUI, but if you run the following command in the *Terminal*, this will set the default save location to ***On My Mac*** for all iCloud-compatible apps:
 
     defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
  
