@@ -1,4 +1,4 @@
-Last Modified 09/07/14 — 06:30:04 PM • Scott Haneda • [@cometbus](https://twitter.com/cometbus)
+Last Modified 09/21/14 - 11:05:40 P.M. • Scott Haneda • [@cometbus](https://twitter.com/cometbus)
 
 # Bashisms
 
@@ -11,13 +11,17 @@ The nice thing is, the file remains a plain text file, LightPaper adds nothing s
 
 I will [publish this file]("https://github.com/5c0tt/bashisms/blob/master/bashisms.md") to github every time I add something new.
 
+## For now, the solution is LightPaper, it is more mature, and the developer is more responsive in my personal opinion.
+
 ## How you can help
 I would love others to help clean up and add to it.  The notion is to keep these as one liners, or snippets of no more than around 8 lines.  Don't sweat it if you are 10 lines, I would rather see 10 lines than some crafty hard to understand one liner just to meet an arbitrary 8 line requirement.
 
     $foo = ( $bar = "ploppity" ? $p = "A" : $p = "B" ) ? "this" : "that";
     
-Or whatever it would be, that is unreadable, impossible, and aggravating when I see ternary code like that.  Nested!  Whoa Bro!    
+Or whatever it would be, that is unreadable, impossible, and aggravating when I see "*ternary code*" like that.  Nested!  Whoa Bro!    
 
-If you are interested in helping, just follow me, or join, or do whatever it is that you do in github to become a contributor.  I am a first time user, so this is all knew to me.  For example, someone could pull this README.md file down and change this part here I say *"I don't know what I am doing"* and add in instructions on how others can help.
+If you are interested in helping, just follow me, or join, or do whatever it is that you do in github to become a contributor.  I am a first time *GitHub* user, so this is all new to me.
 
-It may be a good idea to separate out this file into parts, as there are some very Mac OS X specific commands in the bashisms.md file.
+For example, someone could pull this *README.md* file down and change this part here to say *"I don't know what I am doing"* and add in instructions on how others can help.
+
+It may be a good idea to separate out "bashisms.md" into parts, as there are some very Mac OS X specific commands in the "bashisms.md" file.
