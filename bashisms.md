@@ -263,6 +263,33 @@ The file that Apple Downloads is controlled in the System Preferences of the Dic
     
 Feel free to safely delete the file if you turn off dictation, which is very CPU heavy on older machines.
 
+## Find files by size, then possibly perform an action on them
+Sometimes you need to find throughout a huge list of files containing directories with subdirectories, looking for all files greater than or smaller than a certain criteria.  You may then want to delete or move them elsewhere.
+
+To start with, we need to locate them:
+
+    find /path/to/files. -size +5M
+   
+This will find all files 5Mb or greater.  You can use k for kilobytes, and others, look at the manage for `man find` and you can see all the options.
+
+I usually use a . as the "/path/to/files/" location for the current working directory.
+
+If you then wanted to delete the files it has found, you can use `-exec` or `xargs`, from what I understand, -exec can fail on really large file listings, has issues with spaces in file-names, and other problems that I am yet to fully research.  For now, read this [link at StackOverFlow](http://stackoverflow.com/questions/10079740/find-files-with-size-in-unix).
+
+The general syntax is:
+
+    $find . -iname "*.mp3" -exec ... 
+    $find . -iname "*.txt" -print | xargs file
+    
+The first is just a find of all mp3 files passing in the -exec where you can issue a command such as `mv`, `rm`, etc.
+
+The second will work too, even better as apparently you need not worry about spaces in file names, strange characters, and very large result sets.  The example simply pipes the results to `xargs` and then issues the `file` command, which shows something like this:
+
+    $find . -iname "*.txt" -print | xargs file
+    ./resources/spindump/spindump.txt: ASCII news text, with very long lines
+
+
+
 
 
 
