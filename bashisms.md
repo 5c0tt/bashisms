@@ -241,7 +241,7 @@ Because *DashBoard* runs as a background app through the *Dock*, you will need t
     killall -1 Dock
 
 ## `spindump` Debugging Crashed Applications
-[`spindump`](https://developer.apple.com/library/mac/documentation/Darwin/Reference/Manpages/man8/spindump.8.html) is an application that when another application is stuck and nee qui `apindump` will eventually be called.  It usually is called automatically, according to the man page, a sample of the offending/stuck app are stored at:
+[`spindump`](https://developer.apple.com/library/mac/documentation/Darwin/Reference/Manpages/man8/spindump.8.html) is an application that when another application is stuck and needs quitting, `spindump` will eventually be called.  It usually is called automatically, according to the man page, a sample of the offending/stuck app are stored at:
 
     /Library/Logs/DiagnosticReports/
     
@@ -249,7 +249,7 @@ I don't know how unusual it is, but I have/had 49 total items in
 
     `/Library/Logs/DiagnosticReports/`
     
-which to me seems like a lot. That is a lot of application crashes, however, I was messing with that "*file corruption*" or the drive in haircutting boi's! computer.
+which to me seems like a lot. That is a lot of application crashes, however, I was messing with "*file corruption*" on the drive from my friend Jake's computer.
 
 When an application hangs, `spindump` is called.  This is supposed to release the crashed app, though in my experience, it never does.  It does however, write out a sample of the process in the above `DiagnosticReports` location.
 
