@@ -201,6 +201,9 @@ find . -name .DS_Store -exec rm -f {} \;
 ## All you could ever need to know about `curl`
 Taken from: [curl.haxx.se/docs/faq.html](http://curl.haxx.se/docs/faq.html)
 
+## All you could ever want to know about the `alias` command
+[Bash alias tips and tricks](http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html)
+
 ## Disable/Enable Spotlight from the Command Line
 Taken from [http://www.tekrevue.com/](http://www.tekrevue.com/tip/three-ways-to-prevent-spotlight-from-indexing-items-on-your-mac/)
 
