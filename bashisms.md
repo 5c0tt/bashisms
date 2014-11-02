@@ -213,10 +213,11 @@ Taken from [http://www.tekrevue.com/](http://www.tekrevue.com/tip/three-ways-to-
 
 	Also, add your boot drive to the System Preferences exclusions temporarily.
 
-## One line repeat loop with multiple commands#
+## One line repeat loop with multiple commands
 	while true; do ls -lah | grep -i home; echo \n;    sleep 30; done
+	while sleep 2; do echo thinking; done
 
-## Another example of a long form repeat loop#
+## Another example of a long form repeat loop
 
 	#!/bin/sh
 	cd ~/Documents/place/I/want/to//watch
