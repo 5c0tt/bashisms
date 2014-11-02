@@ -97,6 +97,11 @@ find . -name .DS_Store -exec rm -f {} \;
 ###Check if /tmp has is empty or not
 	
 	find "/tmp" -type f -exec echo Found file {} \;	
+	
+###There are two alternate methods as well:
+
+	$ [ "$(ls -A /path/to/directory)" ] && echo "Not Empty" || echo "Empty"
+	$ [ "$(ls -A /tmp)" ] && echo "Not Empty" || echo "Empty"
 
 ## Create `tar` archive
 
