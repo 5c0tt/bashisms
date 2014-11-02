@@ -102,6 +102,20 @@ find . -name .DS_Store -exec rm -f {} \;
 
 	$ [ "$(ls -A /path/to/directory)" ] && echo "Not Empty" || echo "Empty"
 	$ [ "$(ls -A /tmp)" ] && echo "Not Empty" || echo "Empty"
+	
+##An example of the above directory check but in a script
+
+	#!/bin/bash
+	FILE=""
+	DIR="/tmp"
+	# init
+	# look for empty dir 
+	if [ "$(ls -A $DIR)" ]; then
+	     echo "Take action $DIR is not Empty"
+	else
+	    echo "$DIR is Empty"
+	fi
+	# rest of the logic
 
 ## Create `tar` archive
 
