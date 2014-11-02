@@ -198,6 +198,8 @@ find . -name .DS_Store -exec rm -f {} \;
 	# about meta data, but the space and aggravation that Caroline and Jake are causing my
 	# computer—there isn't much more I am willing to put into their project.
 
+## All you could ever need to know about `curl`
+Taken from: [curl.haxx.se/docs/faq.html](http://curl.haxx.se/docs/faq.html)
 
 ## Disable/Enable Spotlight from the Command Line
 Taken from [http://www.tekrevue.com/](http://www.tekrevue.com/tip/three-ways-to-prevent-spotlight-from-indexing-items-on-your-mac/)
