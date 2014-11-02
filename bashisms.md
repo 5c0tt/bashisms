@@ -197,6 +197,9 @@ find . -name .DS_Store -exec rm -f {} \;
 	# on the files to make sure that the files could be restored without trouble.  I'm still not sure
 	# about meta data, but the space and aggravation that Caroline and Jake are causing my
 	# computer—there isn't much more I am willing to put into their project.
+	
+## Extract a tar archive to a specific location instead of moving it
+	$ tar xvf -C tmp/a/b/c newarc.tar.gz
 
 ## All you could ever need to know about `curl`
 Taken from: [curl.haxx.se/docs/faq.html](http://curl.haxx.se/docs/faq.html)
