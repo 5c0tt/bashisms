@@ -11,7 +11,8 @@ Last Modified 09/21/14 - 11:03:18 P.M. • Scott Haneda • [@cometbus](https://
 	defaults write /Library/Preferences/.GlobalPreferences PMPrintingExpandedStateForPrint -bool TRUE
 
 
-## Use expanded Save/Open dialog by default
+## Use expanded Save/
+Open dialog by default
 
 	defaults write -g NSNavPanelExpandedStateForSaveMode -bool TRUE
 
@@ -85,6 +86,17 @@ find . -name .DS_Store -exec rm -f {} \;
 
 ## Bash repeat loop one-liner
 	while true; do ls -lah | grep -i home; echo \n;    sleep 0.5; done
+	
+## Bash check if directory is empty or contains items
+	find /dir/name -type -f -exec command {} \;
+
+###Alternate syntax for GNU/BSD find command syntax:
+
+	find /path/to/dir -maxdepth 0 -empty -exec echo {} is empty. \;
+
+###Check if /tmp has is empty or not
+	
+	find "/tmp" -type f -exec echo Found file {} \;	
 
 ## Create `tar` archive
 
