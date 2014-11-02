@@ -306,6 +306,9 @@ The file that Apple Downloads is controlled in the System Preferences of the Dic
     
 Feel free to safely delete the file if you turn off dictation, which is very CPU heavy on older machines.
 
+##hdiutil usage examples
+* [http://commandlinemac.blogspot.com/2008/12/using-hdiutil.html](http://commandlinemac.blogspot.com/2008/12/using-hdiutil.html)
+
 ## Find files by size, then possibly perform an action on them
 Sometimes you need to find throughout a huge list of files containing directories with subdirectories, looking for all files greater than or smaller than a certain criteria.  You may then want to delete or move them elsewhere.
 
