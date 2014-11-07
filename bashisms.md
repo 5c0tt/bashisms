@@ -294,6 +294,10 @@ You can also, ( *as root* ) call `spindump` when you know things are going wrong
     
 Each time you call the `spindump` command, the filename is incremented in the `/tmp` directory.  [Here is a sample](resources/spindump/spindump.txt) of the file that you can look at to see how to formatting is and what information is provided.
 
+## A little trick when you have massive data scrolling in a Terminal
+Often times, you will be running a more, tail -f, or some pipe of a command over a fast moving log file.  The text scrolls by super fast, and sliding the page slider to the bottom, by the time you release, you have already stopped several pages of data ahead of the last bits sent in.  My solution which I randomly figured out:
+`option-down arrow` key.
+
 ## Mac OS X Dictation
 You can now talk to your Mac, there are two ways this can happen:
 
