@@ -54,6 +54,12 @@ Open dialog by default
 
 	find . -name .DS_Store -exec rm -f {} \;
 
+## Find all of a file, and copy that result set elsewhere
+Take note, with cp, you may want to be careful and add in logic to make sure that the filename is not common, of you will write over the file multiple times.
+
+    find . -type f -exec cp {} ../done \;
+
+This says find all files in the current working directory, of the kind of type of file, and copy them to a directory called done that is one level up at ../done from the . location.
 
 find . -name .DS_Store -exec rm -f {} \;
 
