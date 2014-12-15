@@ -30,6 +30,24 @@ Open dialog by default
 3. You may also want to try a value of 1 if 0 seems too fast.
 4. You can always visit the Keyboard & Mouse System Preferences panel to undo your changes.
 
+## Yosemit Dock Dark Mode
+
+Here is the script that does it… which I wrap up in an AppleScript and then put into my startup items as it needs to run once per reboot or the settings are lost.
+
+	#!/bin/bash
+	/usr/bin/defaults write NSGlobalDomain AppleInterfaceStyle Dark; sleep 1;
+	/usr/bin/killall Dock; sleep 1;
+	/usr/bin/defaults remove NSGlobalDomain AppleInterfaceStyle
+	
+Stuff this in an AppleScript file:
+
+	run_script.scpt
+	do shell script "cd ~/Applications/custom_dark_mode; pwd; ./dark_mode.sh"
+
+	# Take the above `run_script.sh` and put it into an AppleScript Application, save 
+	# as run_script.app:
+	
+
 ## Disable Dashboard Widgets ( 10.8 OK )
 
 	defaults write com.apple.dashboard mcx-disabled -boolean YES
