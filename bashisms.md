@@ -1,4 +1,5 @@
-Last Modified 09/21/14 - 11:03:18 P.M. • Scott Haneda • [@cometbus](https://twitter.com/cometbus)
+Last Modified 09/21/14 - 11:03:18 P.M.  
+Scott Haneda [@scotthaneda](https://twitter.com/scotthaneda)
 
 # Bash Tips and Tricks
 
@@ -91,6 +92,8 @@ find . -name .DS_Store -exec rm -f {} \;
 	while true; do ls -lh ~/path_to_direcotry_of_files; sleep .2; done;
 	- or -
 	while true; do echo 'test'; sleep .2; done;
+	- or - 
+	while :; do clear; your_command; sleep 2; done
 
 ## General hints
 * [Speed up your Mac with the Terminal](http://www.chriswrites.com/2012/02/5-ways-to-speed-up-your-mac-just-using-terminall/)
@@ -338,7 +341,7 @@ Feel free to safely delete the file if you turn off dictation, which is very CPU
 * [http://commandlinemac.blogspot.com/2008/12/using-hdiutil.html](http://commandlinemac.blogspot.com/2008/12/using-hdiutil.html)
 
 ##Explanation of single, double, square, and curly brackets in bash
-* [http://stackoverflow.com/questions/2188199/how-to-use-double-or-single-bracket-parentheses-curly-braces](http://stackoverflow.com/questions/2188199/how-to-use-double-or-single-bracket-parentheses-curly-braces)
+* [http://stackoverflow.com/questions/2188199…](http://stackoverflow.com/questions/2188199/how-to-use-double-or-single-bracket-parentheses-curly-braces)
 
 ## Find files by size, then possibly perform an action on them
 Sometimes you need to find throughout a huge list of files containing directories with subdirectories, looking for all files greater than or smaller than a certain criteria.  You may then want to delete or move them elsewhere.
